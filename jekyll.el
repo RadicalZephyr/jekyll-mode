@@ -59,7 +59,8 @@ front-matter."
                             (format "%s/%s-%s.md"
                                     "_posts"
                                     date
-                                    title))))
+                                    (replace-regexp-in-string " " "-"
+                                                              title)))))
      (with-current-buffer new-post-buffer
        (insert "---\n"
                "title:" title "\n"
