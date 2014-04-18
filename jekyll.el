@@ -47,6 +47,10 @@ root directory can be found."
          ,body))))
 
 (defun jekyll-start-new-post (title)
+  "Prompt for the title of your new post.
+
+Automatically sets the date and inserts some default
+front-matter."
   (interactive "sEnter post title: \n")
   (jekyll-in-root
    (let* ((calendar-date-display-form '(year "-" month "-" day))
