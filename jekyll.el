@@ -1,4 +1,4 @@
-;;; jekyll.el --- Minor mode for Android application development
+;;; jekyll.el --- Minor mode for working with Jekyll blogs
 
 ;; Copyright (C) 2014 Geoff Shannon
 
