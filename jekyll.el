@@ -64,7 +64,7 @@ front-matter."
                                               (downcase title))))))
      (with-current-buffer new-post-buffer
        (insert "---\n"
-               "title:" title "\n"
+               "title: " title "\n"
                "layout: main\n"
                "comments: true\n"
                "---\n\n"))
