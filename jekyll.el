@@ -55,12 +55,13 @@ front-matter."
   (jekyll-in-root
    (let* ((calendar-date-display-form '(year "-" month "-" day))
           (date (calendar-date-string (calendar-current-date)))
-          (new-post-buffer (find-file-noselect
-                            (format "%s/%s-%s.md"
-                                    "_posts"
-                                    date
-                                    (replace-regexp-in-string " " "-"
-                                                              title)))))
+          (new-post-buffer
+           (find-file-noselect
+            (format "%s/%s-%s.md"
+                    "_posts"
+                    date
+                    (replace-regexp-in-string " " "-"
+                                              (downcase title))))))
      (with-current-buffer new-post-buffer
        (insert "---\n"
                "title:" title "\n"
