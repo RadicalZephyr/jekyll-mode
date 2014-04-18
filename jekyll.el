@@ -7,7 +7,7 @@
 ;; Keywords: tools processes
 ;; Version: 20140417.000
 ;; X-Original-Version: 0.1.0
-;; URL:
+;; URL: https://github.com/RadicalZephyr/jekyll-mode
 
 ;; This program is free software; you can redistribute it and/or
 ;; modify it under the terms of the GNU General Public License
